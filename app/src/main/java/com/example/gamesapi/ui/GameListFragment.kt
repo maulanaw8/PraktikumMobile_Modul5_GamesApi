@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -26,6 +27,8 @@ class GameListFragment: Fragment() {
             findNavController()
                 .navigate(R.id.action_gameListFragment_to_gameDetailFragment)
         })
+
+        (activity as AppCompatActivity).supportActionBar?.title = "List Games PC"
 
         return binding.root
     }

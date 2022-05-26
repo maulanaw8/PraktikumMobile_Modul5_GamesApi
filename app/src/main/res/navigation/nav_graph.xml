@@ -19,5 +19,10 @@
         android:id="@+id/gameDetailFragment"
         android:name="com.example.gamesapi.ui.GameDetailFragment"
         android:label="GameDetailFragment"
-        tools:layout="@layout/fragment_game_detail"/>
+        tools:layout="@layout/fragment_game_detail">
+        <action
+            android:id="@+id/action_gameDetailFragment_to_GameListFragment"
+            app:destination="@id/gameListFragment"
+            />
+    </fragment>
 </navigation>
